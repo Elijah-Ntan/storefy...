@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Fashion Platform</title>
+
+  <!-- Google Analytics (Replace G-XXXXXXXXXX with your real GA4 ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id= G-JW2VVLDLN9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JW2VVLDLN9');
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #2d3a3a;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .cta-button {
+      background-color: #00bcd4;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1rem;
+      text-align: center;
+      margin-top: 20px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    .cta-button:hover {
+      background-color: #0098a6;
+    }
+
+    .content {
+      padding: 2rem;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin: 2rem 10%;
+    }
+
+    .form-container {
+      margin-top: 20px;
+    }
+
+    input[type="email"] {
+      padding: 10px;
+      width: 80%;
+      max-width: 400px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button[type="submit"] {
+      padding: 12px 20px;
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    footer {
+      background-color: #2d3a3a;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Fashion Business, Powered by Us</h1>
+    <p>Build a custom online store for your fashion business. Start selling your clothes and accessories with ease.</p>
+  </header>
+
+  <div class="content">
+    <h2>We’re building the perfect platform for streetwear and fashion vendors in Nigeria!</h2>
+    <p>Our platform will help you create a personal online store, connect directly with your customers, and get paid seamlessly. No need for complicated websites — we’ll make it easy for you to sell your fashion pieces online.</p>
+    
+    <div class="form-container">
+      <h3>Get Early Access</h3>
+      <p>Sign up to be the first to know when we launch and get exclusive early access.</p>
+
+   <form action="#" method="POST" onsubmit="gtag('event', 'sign_up_submit', {'event_category': 'form', 'event_label': 'Sign Up Form Submitted'});">
+
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit" id="signup-button">Sign Up</button>
+      </form>
+    </div>
+
+    <p class="cta-button">Start Selling Now</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Storefy. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Track Sign Up Button Click -->
+  <script>
+    
+      gtag('event', 'sign_up', {
+        event_category: 'engagement',
+        event_label: 'Signup Form Submitted'
+      });
+    
+  </script>
+  <button type="submit" onclick="gtag('event', 'sign_up_click', {'event_category': 'sign_up', 'event_label': 'Sign Up Button Clicked'});">Sign Up</button>
+
+
+</body>
+</html>
+
